@@ -4,7 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>This is an App by me... Daevah T. aka Kirei!!!!</Text>
+      <View style={styles.box}>
+        <Text style={styles.boxText}>#1</Text>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,8 +19,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  text: {
+  boxText: {
     color: '#8B96FF',
     fontWeight: 'bold',
+  },
+  box: {
+    width: 300,
+    height: 100,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "lightgray",
+    borderWidth: 1,
+    borderColor: "darkslategray"
   }
 });
